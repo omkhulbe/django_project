@@ -3,7 +3,7 @@
     <img class="rounded-circle article-image" src="{{ object.author.profile.image.url }}" height="80px" width="80px">
     <div class="media-body">
         <div class="article-metadata">
-            <a class="mr-2" href="#">{{ object.author }}</a>
+            <a class="mr-2" href="{% url 'user-posts' object.author.username %}">{{ object.author }}</a>
             <small class="text-muted">{{ object.date_objected|date:"F d, Y" }}</small> {% if object.author == user %}
 
             <a class="btn btn-secondary btn-sm mt-1 mb-1 ml-1.5" href="{% url 'post-update' object.id %}">Update</a>
