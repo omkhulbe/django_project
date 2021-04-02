@@ -128,8 +128,12 @@ MEDIA_URL = '/media/'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 LOGIN_REDIRECT_URL = 'blog-home'
 LOGIN_URL = 'login'
+
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 587
+EMAIL_HOST = 'smpt.gmail.com'
+EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_USER = 'highnessatharva@gmail.com'
-EMAIL_PASS = 'narnia1234'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+
+# EDIT THIS!!!
